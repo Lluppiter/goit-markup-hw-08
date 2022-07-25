@@ -1,0 +1,16 @@
+.auth {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+.auth__item {
+  display: flex;
+  align-items: center;
+}
+.auth__link {
+  display: flex;
+  gap: 10px;
+
+  color: var(--primary-text-color);
+  transition: var(--standart-go-over);
+}

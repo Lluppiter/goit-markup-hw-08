@@ -1,0 +1,26 @@
+.form {
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+
+    margin-bottom: 10px;
+    text-align: left;
+    transition: var(--standart-go-over);
+
+    &:focus-within {
+      fill: var(--accent-color);
+    }
+  }
+  &__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+  }
+}

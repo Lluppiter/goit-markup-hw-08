@@ -1,0 +1,28 @@
+.footer__section {
+  min-height: 252px;
+  background-color: var(--background-accent-color);
+}
+.footer {
+  display: flex;
+  gap: 70px;
+}
+.footer__adres {
+  width: 231px;
+}
+.footer-social {
+  margin-top: 72px;
+}
+.footer-social__title {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+
+  color: var(--accent-wht-collor);
+  margin-bottom: 20px;
+}
+.footer-adres__list {
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}

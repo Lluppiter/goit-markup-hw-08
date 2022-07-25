@@ -1,0 +1,28 @@
+.logo {
+  display: block;
+
+  text-decoration: none;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &--nav {
+    margin-right: 93px;
+    color: var(--accent-blck-color);
+  }
+  &--accent {
+    color: var(--accent-color);
+  }
+  &:focus {
+    outline-color: var(--accent-color);
+  }
+  &--wht {
+    color: var(--accent-wht-collor);
+    padding-top: 60px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
