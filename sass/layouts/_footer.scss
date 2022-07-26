@@ -1,34 +1,84 @@
-.footer__section {
-  min-height: 603px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--background-accent-color);
-}
 .footer {
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  gap: 60px;
-  align-items: center;
-}
-.footer__adres {
-  /* width: 231px; */
-  text-align: center;
-}
-.footer-social {
-  /* margin-top: 72px; */
-  text-align: center;
-}
-.footer-social__title {
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  text-transform: uppercase;
 
-  color: var(--accent-wht-collor);
-  margin-bottom: 20px;
-}
-.footer-adres__list {
-  /* justify-content: flex-end; */
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
+  @include mq(mob-only) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  @include mq(tab) {
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: space-between;
+    &:not(:last-child) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @include mq(desk) {
+    padding: 0;
+    justify-content: flex-start;
+    gap: 70px;
+  }
+
+  &__section {
+    @include mq(mob) {
+      min-height: 603px;
+    }
+    @include mq(tab) {
+      position: relative;
+      min-height: 463px;
+    }
+    @include mq(desk) {
+      min-height: 252px;
+    }
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-accent-color);
+
+    &-container {
+      padding: 60px 82px;
+    }
+  }
+
+  &__adres {
+    text-align: center;
+
+    @include mq(tab) {
+      max-width: 232px;
+    }
+    @include mq(desk) {
+      text-align: start;
+    }
+  }
+  &-social {
+    text-align: center;
+
+    @include mq(tab) {
+      max-width: 206px;
+    }
+  }
+  &-social__title {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+
+    color: var(--accent-wht-collor);
+    margin-bottom: 20px;
+
+    @include mq(desk) {
+      margin-top: 12px;
+      text-align: start;
+    }
+  }
+  &-adres__list {
+    /* justify-content: flex-end; */
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
 }

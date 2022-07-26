@@ -1,5 +1,32 @@
 .auth {
+  margin-left: auto;
+
+  @include mq(tab) {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  @include mq(desk) {
+    display: flex;
+    gap: 30px;
+  }
+
   &__item {
+    display: flex;
+    align-items: center;
+
+    @include mq(tab-only) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    gap: 8px;
+
+    color: var(--primary-text-color);
+    transition: var(--standart-go-over);
   }
   &-menu {
     display: flex;

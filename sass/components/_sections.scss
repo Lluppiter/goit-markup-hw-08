@@ -3,15 +3,24 @@
   padding-bottom: 60px;
 
   &--work {
-    @include mq(mob-only) {
+    @include mq(mob) {
       display: none;
     }
+    @include mq(tab) {
+      display: none;
+    }
+    @include mq(desk) {
+      display: block;
+    }
+  }
+  &--hero {
+    padding: 0;
   }
 
   &--team {
     background-color: var(--background-color);
   }
-  /* &--advantages {
+  &--advantages {
     padding-bottom: 0;
-  } */
+  }
 }

@@ -1,12 +1,38 @@
 .examples {
+  margin: 0 auto;
+
   &__list {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center;
+    /* align-items: center; */
+    @include mq(mob) {
+      & {
+        flex-direction: column;
+      }
+    }
+    @include mq(tab) {
+      & {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    }
   }
   &__item {
-    width: 450px;
+    @include mq(mob) {
+      & {
+        max-width: 450px;
+      }
+    }
+    @include mq(tab) {
+      & {
+        max-width: 354px;
+      }
+    }
+    @include mq(desk) {
+      max-width: 370px;
+    }
+
     border: 1px solid #eeeeee;
 
     transition: var(--standart-go-over);
@@ -21,8 +47,6 @@
 
   &__icon {
     overflow: hidden;
-    width: 450px;
-    height: 294px;
     position: relative;
   }
   &__deskription {
@@ -44,15 +68,13 @@
     color: var(--accent-wht-collor);
   }
   &__item:hover &__deskription {
-    transform: translateY(-294px);
+    transform: translateY(-100%);
   }
   &:focus &__deskription {
-    transform: translateY(-294px);
+    transform: translateY(-100%);
   }
   &__sign {
-    border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
+    flex-grow: 1;
     padding: 20px 24px;
   }
   &__text {

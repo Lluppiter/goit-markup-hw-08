@@ -1,14 +1,30 @@
-.header {
-  @include mq(mob-only) {
-    &__section {
-      display: none;
-    }
+@include mq(mob-only) {
+  .header__section {
+    display: none;
   }
-  &__mob {
-    min-height: 60px;
-    display: flex;
-    align-items: center;
+}
+@include mq(tab) {
+  .header__mobile {
+    display: none;
+  }
+}
+.header__mob {
+  position: relative;
+  min-height: 60px;
 
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
+
+  border-bottom: 1px solid #ececec;
+}
+.header {
+  min-height: 80px;
+  display: flex;
+  margin: 0 auto;
+
+  &__section {
     border-bottom: 1px solid #ececec;
   }
 }

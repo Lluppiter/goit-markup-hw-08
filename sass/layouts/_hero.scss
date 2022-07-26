@@ -1,6 +1,16 @@
 .hero {
-  height: 400px;
-  max-width: 480px;
+  @include mq(mob) {
+    max-height: 400px;
+    max-width: 480px;
+  }
+  @include mq(tab) {
+    max-width: 768px;
+    max-height: 400px;
+  }
+  @include mq(desk) {
+    max-width: 1600px;
+    max-height: 600px;
+  }
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/no-content/hero.jpg);
@@ -17,13 +27,22 @@
 .hero__title {
   color: var(--accent-wht-collor);
 
+  font-style: normal;
   font-weight: 900;
   font-size: 26px;
   line-height: calc(42 / 26);
   text-transform: uppercase;
 
-  width: 380px;
+  max-width: 360px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  @include mq(desk) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+
+    max-width: 696px;
+    margin-bottom: 30px;
+  }
 }
