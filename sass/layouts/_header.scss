@@ -1,7 +1,14 @@
-.header__section {
-  border-bottom: 1px solid #ececec;
-}
 .header {
-  min-height: 80px;
-  display: flex;
+  @include mq(mob-only) {
+    &__section {
+      display: none;
+    }
+  }
+  &__mob {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #ececec;
+  }
 }

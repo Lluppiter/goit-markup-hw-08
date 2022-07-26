@@ -31,7 +31,7 @@
             <li class="nav__item">
               <a
                 href="./index.html"
-                class="link nav__link"
+                class="link nav__link nav__link--current"
                 target="_self"
                 title="переход на заглавную страницу студии"
               >
@@ -41,7 +41,7 @@
             <li class="nav__item">
               <a
                 href="./portfolio.html"
-                class="link nav__link nav__link--current"
+                class="link nav__link"
                 target="_self"
                 title="переход на страницу портфолио"
                 >Портфолио</a
@@ -77,6 +77,116 @@
       </div>
     </header>
 
+    <header class="header__mobile">
+      <div class="header__mob container">
+        <a
+          href="./index.html"
+          class="logo logo--nav"
+          target="_self"
+          title="Переход на заглавную страницу"
+        >
+          <span class="logo--accent">Web</span>Studio
+        </a>
+        <button class="header-button">
+          <svg class="header-button__icon" width="40px" height="40px" data-menu-open>
+            <use href="./images/icon.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu" data-menu>
+        <button class="header-button">
+          <svg class="header-button__icon" width="40px" height="40px" data-menu-close>
+            <use href="./images/icon.svg#icon-menuclose"></use>
+          </svg>
+        </button>
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a
+              href="./index.html"
+              class="link link__nav-menu"
+              target="_self"
+              title="переход на заглавную страницу студии"
+            >
+              Студия
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a
+              href="./portfolio.html"
+              class="link link__nav-menu link__nav-menu--current"
+              target="_self"
+              title="переход на страницу портфолио"
+            >
+              Портфолио
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a
+              href="./contacts.html"
+              class="link link__nav-menu"
+              target="_self"
+              title="переход на страницу контактов"
+            >
+              Контакты
+            </a>
+          </li>
+        </ul>
+
+        <ul class="auth-menu">
+          <li class="auth-menu__item">
+            <a href="mailto:info@devstudio.com" class="link link__menu-auth link__menu-auth--blue">
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="menu-auth__item">
+            <a href="tel:+380961111111" class="link link__menu-auth"> +38 096 111 11 11</a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a
+              href="https://www.instagram.com/"
+              class="link link__social-list"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              title="Ссылка на instagramm"
+              >Instagram</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              href="https://twitter.com/"
+              class="link link__social-list"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              title="Ссылка на twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              href="https://www.facebook.com/"
+              class="link link__social-list"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              title="Ссылка на facebook"
+              >Facebook</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              href="https://ua.linkedin.com/"
+              class="link link__social-list"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              title="Ссылка на linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="section">
         <div class="examples container">
@@ -412,6 +522,10 @@
           </div>
         </div>
       </div>
+
+      <!-- skript for opening modal -->
+      <script src="./js/modal.js"></script>
+      <script src="./js/data.js"></script>
     </footer>
   </body>
 </html>

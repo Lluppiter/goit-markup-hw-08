@@ -19,12 +19,12 @@
 
     <header class="header__section">
       <div class="header container">
-        <nav class="nav">
-          <a href="./index.html" class="logo logo--nav" target="_self" title="Переход на заглавную страницу">
-            <span class="logo--accent">Web</span>Studio
-          </a>
+        <nav class="nav">          
+            <a href="./index.html" class="logo logo--nav" target="_self" title="Переход на заглавную страницу">
+            <span class="logo--accent">Web</span>Studio            
+          </a>         
           <ul class="nav__list">
-            <li class="nav__item nav__item">
+            <li class="nav__item">
               <a
                 href="./index.html"
                 class="link nav__link nav__link--current"
@@ -69,6 +69,77 @@
           </li>
         </ul>
       </div>
+    </header>
+
+    <header class="header__mobile">
+      <div class="header__mob container">
+        <a href="./index.html" class="logo logo--nav" target="_self" title="Переход на заглавную страницу">
+          <span class="logo--accent">Web</span>Studio            
+        </a>
+        <button class="header-button">
+          <svg class="header-button__icon" width="40px" height="40px" data-menu-open>
+            <use href="./images/icon.svg#icon-menu"></use>
+          </svg>
+        </button>              
+      </div>
+      <div class="menu" data-menu>
+        <button class="header-button">
+          <svg class="header-button__icon" width="40px" height="40px" data-menu-close>
+            <use href="./images/icon.svg#icon-menuclose"></use>
+          </svg>
+        </button> 
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <a
+              href="./index.html"
+              class="link link__nav-menu link__nav-menu--current"
+              target="_self"
+              title="переход на заглавную страницу студии"
+            >
+            Студия
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a
+              href="./portfolio.html"
+              class="link link__nav-menu"
+              target="_self"
+              title="переход на страницу портфолио"
+              >
+              Портфолио
+            </a>
+          </li>
+          <li class="nav-menu__item">
+            <a
+              href="./contacts.html"
+              class="link link__nav-menu"
+              target="_self"
+              title="переход на страницу контактов"
+              >
+              Контакты
+            </a>
+          </li>                    
+        </ul>
+
+        <ul class="auth-menu">          
+          <li class="auth-menu__item">
+            <a href="mailto:info@devstudio.com" class="link link__menu-auth link__menu-auth--blue">
+            info@devstudio.com</a>
+          </li>          
+          <li class="menu-auth__item">
+            <a href="tel:+380961111111" class="link link__menu-auth">
+            +38 096 111 11 11</a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-list__item"><a href="https://www.instagram.com/"class="link link__social-list"  target="_blank" rel="noopener noreferrer nofollow" title="Ссылка на instagramm">Instagram</a></li>
+          <li class="social-list__item"><a href="https://twitter.com/" class="link link__social-list" target="_blank" rel="noopener noreferrer nofollow" title="Ссылка на twitter">Twitter</a></li>
+          <li class="social-list__item"><a href="https://www.facebook.com/" class="link link__social-list" target="_blank" rel="noopener noreferrer nofollow" title="Ссылка на facebook">Facebook</a></li>
+          <li class="social-list__item"><a href="https://ua.linkedin.com/" class="link link__social-list" target="_blank" rel="noopener noreferrer nofollow" title="Ссылка на linkedin">LinkedIn</a></li>
+        </ul>
+      </div>
+
     </header>
 
     <main>
@@ -133,7 +204,7 @@
         </div>
       </section>
       <!-- what do we do -->
-      <section class="section">
+      <section class="section section--work">
         <div class="work container">
           <h2 class="title work__title">Чем мы занимаемся</h2>
           <ul class="work__list">
@@ -177,16 +248,14 @@
           <ul class="team__list">
             <li class="team__item">
               <img
-                class="team__img"
-                src="./images/igor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
+               srcset="images\team\img-1-1-sm.jpg 1x, images\team\img-1-1-sm.jpg 2x"
+               src="images\team\img-1-1-sm.jpg"
+               alt="Игорь Демьяненко" 
               />
               <div class="team__deskription">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
-                <div class="social">
+                <div class="social--team">
                   <ul class="social__list">
                     <li class="social__item">
                       <a href="https://www.instagram.com/"class="social__link social__link--gray"  target="_blank" rel="noopener noreferrer nofollow" title="Ссылка на instagramm">
@@ -486,7 +555,7 @@
     </footer>
     <!-- backdro & modal -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal__window">
+      <div class="modal-window">
         <h2 class="title modal__title">
           Оставьте свои данные, мы вам перезвоним
         </h2>
@@ -501,7 +570,7 @@
             <label>
               Имя
               <svg class="form__icon" width="18px" height="18px"><use href="./images/icon.svg#icon-name"></use></svg>
-              <input class="input input--line" type="text" name="user-name" autofocus autocomplete="on">     
+              <input class="input input--line" type="text" name="user-name" autofocusss autocomplete="on">     
             </label>            
           </div>                  
         
@@ -524,7 +593,7 @@
           <div class="form__item">
             <label>
               Комментарий
-              <textarea class="input input--coment" name="user-coment" rows="5" placeholder="Введите текст" ></textarea>
+              <textarea class="input input--coment" name="user-coment" rows="6" placeholder="Введите текст" ></textarea>
             </label>
           </div>
 
@@ -539,6 +608,7 @@
       </div>
     </div>
     <!-- skript for opening modal -->
-    <script src="./js/modal.js"></script>    
+    <script src="./js/modal.js"></script>
+    <script src="./js/data.js"></script>     
   </body>
 </html>

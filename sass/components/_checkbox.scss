@@ -6,7 +6,7 @@
     width: 16px;
     height: 15px;
     border: 2px solid var(--accent-blck-color);
-    border-radius: 2.5px;
+    border-radius: 2px;
     transition: var(--standart-go-over);
   }
   &:checked + &__icon {
@@ -17,18 +17,22 @@
     border-color: transparent;
   }
   &__text--user-terms {
+    font-weight: 400;
     color: var(--accent-color);
     text-underline-position: under;
   }
   &__item {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 7px;
 
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    font-size: 12px;
+    line-height: calc(14 / 12);
     color: var(--primary-text-color);
-    margin: 20px auto 30px;
+    /* margin: 20px auto 30px; */
   }
 }

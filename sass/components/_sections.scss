@@ -1,0 +1,17 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &--work {
+    @include mq(mob-only) {
+      display: none;
+    }
+  }
+
+  &--team {
+    background-color: var(--background-color);
+  }
+  /* &--advantages {
+    padding-bottom: 0;
+  } */
+}

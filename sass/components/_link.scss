@@ -1,34 +1,58 @@
 .link {
   color: var(--title-text-collor);
   text-decoration: none;
+  font-style: normal;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   transition: var(--standart-go-over);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
     outline-color: var(--accent-color);
-    fill: var(--accent-color);    
+    fill: var(--accent-color);
   }
+
+  &__nav-menu {
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+
+    &--current {
+      color: var(--accent-color);
+    }
+  }
+  &__menu-auth {
+    font-size: 24px;
+    line-height: 1.166;
+
+    color: var(--primary-text-color);
+    &--blue {
+      font-size: 34px;
+      line-height: 1.176;
+
+      color: var(--accent-color);
+    }
+  }
+  &__social-list {
+    font-size: 18px;
+    line-height: 1.22;
+
+    color: var(--accent-color);
+  }
+
   &--gmaps {
+    font-weight: 400;
+    line-height: 1.71;
     color: var(--accent-wht-collor);
-    font-style: normal;
+  }
+  &--adr {
     font-weight: 400;
     line-height: 1.71;
 
-    &:hover,
-    &:focus {
-      color: var(--accent-wht-collor);
-    }
-  }
-
-  &--adr {
     color: var(--accent-footer-color);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71;    
   }
 }

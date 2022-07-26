@@ -1,6 +1,7 @@
 .social {
   &__list {
     display: flex;
+    justify-content: center;
     gap: 10px;
   }
   &__link {
@@ -34,5 +35,8 @@
       background-color: var(--accent-color);
       border-color: var(--accent-color);
     }
+  }
+
+  &--team {
   }
 }

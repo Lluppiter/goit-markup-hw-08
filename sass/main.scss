@@ -1,37 +1,39 @@
 /* utils */
-
 @import './utils/normalise';
-@import './utils/variables';
-@import './utils/_visuali-hidden';
-@import './utils/is-hidden';
+@import './utils/varialbles';
+@import './utils/visuali_hidden';
+@import './utils/mixin';
 /* base */
-@import './base/_reset';
-@import './base/_typography';
-/* components */
-@import './components/_container';
-@import './components/_section';
-@import './components/_main';
-@import './components/_button';
-@import './components/_logo';
-@import './components/_link';
-@import './components/_navigation';
-@import './components/_social';
-@import './components/_authentication.scss';
-@import './components/_subskribe';
-@import './components/_backdrop';
-@import './components/_close-button';
-@import './components/_form';
+@import './base/reset';
+@import './base/typography';
+/* component */
+@import './components/main';
+@import './components/container';
+@import './components/sections';
+@import './components/link';
+@import './components/logo';
+@import './components/logo-button';
+@import './components/menu';
+@import './components/navigation';
+@import './components/authentification';
+@import './components/social-list';
+@import './components/button';
+@import './components/social';
+@import './components/subskribe';
+@import './components/modal';
+@import './components/close-button';
+@import './components/form';
 @import './components/input';
-@import './components/_checkbox';
-@import './components/sort-list';
+@import './components/backdrop';
+@import './components/checkbox';
 @import './components/sort-button';
-@import './components/_examples';
-/* layouts */
-@import './layouts/_header';
-@import './layouts/_hero';
-@import './layouts/_advantages';
-@import './layouts/_work';
-@import './layouts/_team';
-@import './layouts/_partners';
-@import './layouts/_footer';
-@import './layouts/_modal';
+@import './components/sort-list';
+/* layout */
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/advantages';
+@import './layouts/work';
+@import './layouts/team';
+@import './layouts/partners';
+@import './layouts/footer';
+@import './layouts/examples';
