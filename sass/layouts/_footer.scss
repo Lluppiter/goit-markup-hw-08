@@ -20,9 +20,14 @@
     }
   }
   @include mq(desk) {
-    padding: 0;
+    padding: 0 15px;
     justify-content: flex-start;
-    gap: 70px;
+    &:not(:last-child) {
+      gap: 70px;
+    }
+    &:last-child {
+      gap: 93px;
+    }
   }
 
   &__section {

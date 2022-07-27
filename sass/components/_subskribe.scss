@@ -10,12 +10,14 @@
     left: 0;
   }
   @include mq(desk) {
+    position: relative;
     width: 570px;
     text-align: start;
     left: auto;
     right: 0;
     top: auto;
     bottom: auto;
+    margin: 0;
   }
 
   &__title {

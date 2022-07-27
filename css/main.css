@@ -607,6 +607,14 @@ a {
           flex-direction: column;
   gap: 32px;
 }
+@media screen and (max-width: 767.98px) {
+  .auth-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 
 .social-list {
   position: absolute;
@@ -747,12 +755,14 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .subskribe {
+    position: relative;
     width: 570px;
     text-align: start;
     left: auto;
     right: 0;
     top: auto;
     bottom: auto;
+    margin: 0;
   }
 }
 .subskribe__title {
@@ -1507,11 +1517,16 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 0;
+    padding: 0 15px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .footer:not(:last-child) {
     gap: 70px;
+  }
+  .footer:last-child {
+    gap: 93px;
   }
 }
 .footer__section {
