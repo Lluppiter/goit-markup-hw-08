@@ -1,19 +1,4 @@
 .hero {
-  @include mq(mob) {
-    max-height: 400px;
-    max-width: 480px;
-  }
-  @include mq(tab) {
-    max-width: 768px;
-    max-height: 400px;
-  }
-  @include mq(desk) {
-    max-width: 1600px;
-    max-height: 600px;
-  }
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/no-content/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,8 +6,48 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  padding: 118px 0;
   margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/header-bg_sm.png);
+  padding: 118px 0;
+
+  @include mq(mob) {
+    max-height: 400px;
+    min-width: 320px;
+    max-width: 480px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/header-bg_sm.png);
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/header-bg_sm@2x.png);
+    }
+  }
+  @include mq(tab) {
+    max-width: 768px;
+    max-height: 400px;
+
+    background-size: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/header-bg_md.png);
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/header-bg_md@2x.png);
+    }
+  }
+  @include mq(desk) {
+    max-width: 1600px;
+    max-height: 600px;
+    padding: 200px 0;
+
+    background-size: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/header-bg_lg.png);
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/header-bg_lg@2x.png);
+    }
+  }
 }
 .hero__title {
   color: var(--accent-wht-collor);
@@ -42,7 +67,7 @@
     font-size: 44px;
     line-height: calc(60 / 44);
 
-    max-width: 696px;
+    max-width: 670px;
     margin-bottom: 30px;
   }
 }
