@@ -25,10 +25,10 @@
     background-color: var(--background-color);
     border-radius: 4px;
     margin-bottom: 30px;
+    height: 120px;
 
     @include mq(mob) {
       max-width: 450px;
-      height: 120px;
     }
     @include mq(tab) {
       max-width: 354px;

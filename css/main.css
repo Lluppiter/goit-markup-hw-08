@@ -741,7 +741,7 @@ a {
 @media screen and (min-width: 768px) {
   .subskribe {
     position: absolute;
-    bottom: 60px;
+    top: 188px;
     left: 0;
   }
 }
@@ -1249,11 +1249,11 @@ a {
   background-color: var(--background-color);
   border-radius: 4px;
   margin-bottom: 30px;
+  height: 120px;
 }
 @media screen and (min-width: 480px) {
   .advantages__img {
     max-width: 450px;
-    height: 120px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1279,6 +1279,12 @@ a {
 
 .work {
   margin: 0 auto;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 .work__title {
   color: var(--title-text-collor);
@@ -1407,6 +1413,9 @@ a {
 }
 
 .partners__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
