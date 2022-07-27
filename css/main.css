@@ -477,6 +477,12 @@ a {
   gap: 38%;
   background-color: var(--accent-wht-collor);
   z-index: 10;
+  -webkit-transform: position;
+          transform: position;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu.is-open {
   top: 0;
